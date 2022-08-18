@@ -11,7 +11,7 @@ class Snake
 
   def create_snake
     size.times do |iteration|
-      @parts &lt;&lt; [ position[0], position[1] + iteration }
+      @parts << [ position[0], position[1] + iteration ]
     end
   end
 
@@ -29,7 +29,7 @@ class Snake
 
   def increase
     @size += 1
-    @parts &lt;&lt; parts.last
+    @parts << parts.last
   end
 
   def update_head(idx, value)
